@@ -1,0 +1,212 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  
+  width: 50%;
+  
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  background-color: black;
+}
+
+.display{
+  width: 80%;
+  
+  
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.buttons-container{
+  
+  min-width:50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+  padding: 10px 20px;
+  
+
+
+
+}
+
+.button{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  width:100px;
+  height:100px;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+}
+
+.big-button{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  width:112px;
+  height:112px;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+  
+}
+
+
+
+.diplay-fields{
+  text-align: center;
+  background: black;
+  margin-top: 30px;
+  
+  color:white;
+  
+  font-size: 4rem;
+  text-transform: uppercase;
+  width: 150px;
+  transition: background 1s;
+  cursor: pointer;
+}
+
+
+.big-button:active{
+  transform: translateY(4px);
+}
+
+
+
+.stop{
+  background-color:darkred;
+  color: red;
+}
+
+.small-stop{
+  border: solid 2px black;
+}
+.small-start{
+  border: solid 2px black;
+}
+
+.start{
+  background-color: darkgreen;
+  color:lightgreen
+}
+
+.lap{
+  background-color: grey;
+  color:white
+}
+
+.small-lap{
+  border: solid 2px black;
+
+}
+.reset{
+  background-color: grey;
+  color:white
+}
+
+.small-reset{
+  border: solid 2px black;
+}
+
+.hr{
+  color:black;
+
+  background-color: lightgray;
+  width: 360px;
+  height:1px;
+}
+
+.lap-component{
+  font-size: 1.8em;
+  margin-top: 20px;
+  color: lightgreen;
+  
+  width: 80%;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .App{
+    width:100%;
+    
+  }
+  .lap-component{
+    width:90%;
+    font-size: 1.5em;
+  }
+
+  .buttons-container{
+    width:80%;
+  }
+
+  .display{
+    width:100%;
+  }
+
+  .diplay-fields{
+    font-size:3rem
+  }
+
+  .hr{
+    width:300px
+  }
+}
